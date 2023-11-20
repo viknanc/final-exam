@@ -1,0 +1,129 @@
+/*
+Name: Viknan Chandrakumar
+Subject: Data1200
+Student Number: 381157
+*/
+
+body {
+    /* Set default font and reset margin/padding for the entire document */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* Styling for the navigation bar - background color and padding */
+    background-color: #333;
+    padding: 10px 0;
+    /* Flex display for easy positioning and alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Text color for navigation links */
+    color: #fff;
+
+}
+
+.logo {
+    /* Styling for the logo in the navigation bar - font size and weight */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    /* Remove default list styling and margin */
+    list-style: none;
+    margin: 0;
+    /* Display navigation links in a row */
+    display: flex;
+}
+
+nav li {
+    /* Margin between navigation items */
+    margin-right: 20px;
+}
+
+nav a {
+    /* Remove underlines from links and set initial text color */
+    text-decoration: none;
+    color: #fff;
+    /* Position relative for pseudp-element styling */
+    position: relative;
+}
+
+nav a:hover {
+    /* Hover effect for the text color change on navigation links */
+    position: #fff;
+}
+
+nav a:hover::before {
+    /* Pseudo-element for the underline effect on hover */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-orgin: bottom right;
+    transition: transform 0.3s ease-out;
+
+}
+
+.container {
+    /* Set max width for the content container and center it on the page */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    /* Margin between sections */
+    margin-bottom: 20px;
+}
+
+#overview img {
+    /* Make the image responsive within its container */
+    width: 100%;
+}
+
+overview h1 {
+    /* Text color for the main heading */
+    color: #333;
+}
+
+.btn {
+    /* Button styling - background color, text color, padding, and relative positioning */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hoover::before {
+    /* Pseudo-element for the underline effect on button hover */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    left: 0;
+    transform: ScaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.3 ease-out;
+}
+
+footer {
+    /* Footer styling - background color, text color, text alignment, and padding */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+

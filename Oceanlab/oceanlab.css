@@ -1,0 +1,160 @@
+
+/*
+Name: Viknan Chandrakumar
+Subject: Data1200
+Student Number: 381157
+*/
+
+/* I have set default font and reset margin/padding for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* I set minimum height to 100% of the viewport height */
+}
+
+/* In this part, I styled the navigation bar with a background color and padding */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex; /* I used flex display for easy positioning and alignment */
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* I defined text color for navigation links */
+    font-family: Arial, sans-serif; /* Set font-family for navbar */
+}
+
+/* I styled the logo in the navigation bar with a specific font size and weight */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* I removed default list styling and margin for navigation links */
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex; /* I displayed navigation links in a row */
+}
+
+/* I added margin between navigation items */
+nav li {
+    margin-right: 20px;
+}
+
+/* I removed underlines from links and set initial text color */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    position: relative; /* I used position relative for pseudo-element styling */
+}
+
+/* On hover, I created a text color change effect for navigation links */
+nav a:hover {
+    color: #fff;
+}
+
+/* I added a pseudo-element for the underline effect on hover */
+nav a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+/* Updated container class for centering */
+.container {
+    max-width: 1200px;
+    margin: auto; /* I centered the container horizontally */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    flex: 1;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+}
+
+/* I added margin between sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* I set text color for the main heading and centered the text */
+#oceanlab h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Updated image grid class for centering images */
+.image-grid {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    flex-wrap: wrap; /* Allow images to wrap if needed */
+    width: 100%; /* Full width of the parent container */
+    height: 100%; /* Full height of the parent container */
+}
+
+/* I styled individual image containers with a specific width and margin */
+.image-container {
+    position: relative;
+    width: 30%; /* Adjust width as needed */
+    margin: 10px; /* Adjust margins as needed */
+}
+
+/* I styled individual photos with a fixed height and cover property */
+.image-container img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+}
+
+/* I added styling for overlay text on photos */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 94%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: right 0.3s ease-in-out;
+    opacity: 0; /* I initially hid the overlay */
+}
+
+/* I added a hover effect on image containers */
+.image-container:hover .image-overlay {
+    right: 0; /* I made it slide to the left on hover */
+    opacity: 1; /* I showed the overlay on hover */
+}
+
+/* I styled overlay title with a specific font size and margin */
+.image-overlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* I styled overlay text with a specific font size */
+.image-overlay p {
+    font-size: 1rem;
+}
+/* I styled the footer with a background color, text color, text alignment, and padding */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
