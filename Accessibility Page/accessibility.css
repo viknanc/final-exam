@@ -11,8 +11,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff; /* Text color for navigation links */
-    font-family: Arial, sans-serif; /* Font family for logo and navbar */
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
 /* Styling for the logo in the navigation bar */
@@ -45,50 +45,51 @@ nav a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 /* Styling for the Accessibility page section */
-#accessibility {
+.accessibility-section {
     margin-bottom: 20px;
 }
 
-/* Container for a single photo */
-.photo-container-single {
+/* Container for the accessibility photos */
+.photo-container {
     display: flex;
-    flex: 1;
-    position: relative;
 }
 
-/* Styling for a single photo */
-.photo-single {
+/* Styling for the accessibility photos */
+.photo {
     flex: 1;
     position: relative;
     overflow: hidden;
+    margin-right: 10px; /* Add margin to create spacing between photos */
+    max-width: 550px; /* Set maximum width to ensure responsiveness */
 }
 
-/* Styling for the photo itself */
-.photo-single img {
+/* Styling for the accessibility photos themselves */
+.photo img {
     width: 100%;
-    height: auto; /* Allow the image to scale proportionally */
+    height: auto; /* Set height to auto to maintain aspect ratio */
     display: block;
 }
 
-/* Styling for overlay text on the photo */
+/* Styling for overlay text on the accessibility photos */
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     text-align: center;
     width: 98%;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px;
-    transition: transform 0.3s ease-in-out; /* Added transition property */
-    transform: translateY(100%); /* Initially set to move the overlay down */
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
 }
 
 /* Styling for overlay title */
@@ -96,21 +97,23 @@ nav a {
     margin-bottom: 10px;
 }
 
-/* Styling for overlay text on the photo with sliding-up effect */
-.photo-single:hover .overlay {
-    transform: translateY(0); /* Move the overlay up on hover */
+/* Styling for overlay text on the accessibility photos with sliding-up effect */
+.photo:hover .overlay {
+    transform: translateY(0);
 }
 
 /* Styling for the footer with a background color, text color, text alignment, and padding */
 footer {
-    background-color: #333;    /* Set the background color for the footer */
-    color: #fff;               /* Set the text color for the footer */
-    text-align: center;        /* Center-align the text in the footer */
-    padding: 20px 0;           /* Add padding to the top and bottom of the footer */
-    font-family: Arial, sans-serif; /* Set the font-family for the footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
     
-    position: fixed;           /* Fix the position of the footer */
-    bottom: 0;                 /* Position the footer at the bottom of the viewport */
-    width: 100%;               /* Ensure the footer spans the full width of the viewport */
-    left: 0;                   /* Ensure the footer starts from the left edge of the viewport */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
+
+
