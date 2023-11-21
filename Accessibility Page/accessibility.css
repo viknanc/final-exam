@@ -50,33 +50,33 @@ nav a {
     flex-direction: column;
 }
 
-/* Styling for the Topical page section */
-#topical {
+/* Styling for the Accessibility page section */
+#accessibility {
     margin-bottom: 20px;
 }
 
-/* Container for photos */
-.photo-container {
+/* Container for a single photo */
+.photo-container-single {
     display: flex;
     flex: 1;
     position: relative;
 }
 
-/* Styling for individual photos */
-.photo {
+/* Styling for a single photo */
+.photo-single {
     flex: 1;
     position: relative;
     overflow: hidden;
 }
 
-/* Styling for the photos themselves */
-.photo img {
+/* Styling for the photo itself */
+.photo-single img {
     width: 100%;
-    height: 100%; /* Set height to 100% to maintain aspect ratio */
+    height: auto; /* Allow the image to scale proportionally */
     display: block;
 }
 
-/* Styling for overlay text on photos */
+/* Styling for overlay text on the photo */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -96,8 +96,8 @@ nav a {
     margin-bottom: 10px;
 }
 
-/* Styling for overlay text on photos with sliding-up effect */
-.photo:hover .overlay {
+/* Styling for overlay text on the photo with sliding-up effect */
+.photo-single:hover .overlay {
     transform: translateY(0); /* Move the overlay up on hover */
 }
 
@@ -114,7 +114,3 @@ footer {
     width: 100%;               /* Ensure the footer spans the full width of the viewport */
     left: 0;                   /* Ensure the footer starts from the left edge of the viewport */
 }
-
-
-
-
