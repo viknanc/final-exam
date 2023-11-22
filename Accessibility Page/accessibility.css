@@ -1,11 +1,10 @@
-
 /*
-Name: Viknan Chandrakumar
-Subject: Data1200
-Student Number: 381157
+  Name: Viknan Chandrakumar
+  Subject: Data1200
+  Student Number: 381157
 */
 
-/* Reset some default styling to ensure consistency */
+/* Reset default styling for consistency */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -13,6 +12,7 @@ body, h1, h2, p, ul, li {
 
 /* Styling for the navigation bar */
 nav {
+    /* Background color, padding, and flex display for navigation bar */
     background-color: #333;
     padding: 10px 0;
     display: flex;
@@ -24,12 +24,14 @@ nav {
 
 /* Styling for the logo in the navigation bar */
 .logo {
+    /* Font size and weight for the logo */
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 /* Styling for the navigation links */
 nav ul {
+    /* List style, margin, and display for navigation links */
     list-style: none;
     margin: 0;
     display: flex;
@@ -37,11 +39,13 @@ nav ul {
 
 /* Styling for individual navigation items */
 nav li {
+    /* Margin for spacing between navigation items */
     margin-right: 20px;
 }
 
 /* Styling for navigation links */
 nav a {
+    /* Text decoration, color, and relative position for navigation links */
     text-decoration: none;
     color: #fff;
     position: relative;
@@ -49,43 +53,48 @@ nav a {
 
 /* Main content container */
 .container {
+    /* Max width, margin, and flex direction for main content container */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     flex-direction: column;
     align-items: center;
     display: flex;
-    flex-direction: column;
 }
 
 /* Styling for the Accessibility page section */
 .accessibility-section {
+    /* Margin for spacing below accessibility section */
     margin-bottom: 20px;
 }
 
 /* Container for the accessibility photos */
 .photo-container {
+    /* Flex display for the photo container */
     display: flex;
 }
 
 /* Styling for the accessibility photos */
 .photo {
+    /* Flex, position, overflow, margin, and max width for individual photos */
     flex: 1;
     position: relative;
     overflow: hidden;
-    margin-right: 10px; /* Add margin to create spacing between photos */
-    max-width: 550px; /* Set maximum width to ensure responsiveness */
+    margin-right: 10px;
+    max-width: 550px;
 }
 
 /* Styling for the accessibility photos themselves */
 .photo img {
+    /* Width, height, and display for accessibility photos */
     width: 100%;
-    height: auto; /* Set height to auto to maintain aspect ratio */
+    height: auto;
     display: block;
 }
 
 /* Styling for overlay text on the accessibility photos */
 .overlay {
+    /* Position, bottom, left, transform, text alignment, width, background color, color, padding, and transition for overlay text */
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -101,26 +110,29 @@ nav a {
 
 /* Styling for overlay title */
 .overlay h2 {
+    /* Margin for spacing below overlay title */
     margin-bottom: 10px;
 }
 
 /* Styling for overlay text on the accessibility photos with sliding-up effect */
 .photo:hover .overlay {
+    /* Transform for sliding-up effect on hover */
     transform: translateY(0);
 }
 
-/* Styling for the footer with a background color, text color, text alignment, and padding */
+/* Styling for the footer with background color, text color, text alignment, padding, font family, position, width, and left */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     font-family: Arial, sans-serif;
-    
     position: fixed;
     bottom: 0;
     width: 100%;
     left: 0;
 }
+
+
 
 
